@@ -1,0 +1,84 @@
+{
+  "login": {
+    "title": "Sign in to EUREKA_CSIMS",
+    "signup_link": "New to EUREKA_CSIMS? Sign up!",
+    "email": "Email",
+    "password": "Password",
+    "sign_in": "Sign in",
+    "forgot_password": "Forgot password?",
+    "sign_from_app_text": "or Sign in with one click",
+    "share_on_facebook": "Share on Facebook",
+    "share_on_twitter": "Share on Twitter",
+    "share_on_google_plus": "Share on Google Plus"
+  },
+  "general": {
+    "company": "KOSYAS",
+    "home": "Home",
+    "forms": {
+      "option1": "Option 1"
+    },
+    "menu": {
+      "dashboard": "Dashboard",
+      "intrusion": "Intrusion",
+      "vulnerability": "Vulnerability",
+      "systems": "Systems",
+      "full_logs": "Full Logs",
+      "analysis": "Analysis",
+      "correlation": "Correlation",
+      "add_rule": "Add Rule",
+      "elastalert": "ElastAlert",
+      "editors": "Editors",
+      "configuration": "Configuration",
+      "log": "Log",
+      "user": "User",
+      "agent": "Agent",
+      "system": "System",
+      "report": "Report",
+      "ck_editor": "CKEditor",
+      "components": "Components",
+      "tree_view": "Tree View",
+      "intelligence": "Intelligence",
+      "chartist_js": "Chartist.Js"
+    },
+    "created_with": "Created with"
+  },
+  "dashboard": {
+    "acquisition_channels": "Acquisition Channels",
+    "users_by_country": "Users by Country",
+    "revenue": "Revenue",
+    "feed": "Feed",
+    "todo_list": "To Do List",
+    "calendar": "Calendar",
+    "cpu": "CPU",
+    "memory": "Memory",
+    "disk": "Disk",
+    "network": "Network",
+    "popular_app": {
+      "super_app": "Super App",
+      "most_popular_app": "Most Popular App",
+      "total_visits": "Total Visits",
+      "new_visits": "New Visits",
+      "sales": "Sales"
+    },
+    "todo": {
+      "task_todo": "Task to do.."
+    },
+    "traffic_chart": {
+      "view_total": "Views Total"
+    }
+  },
+  "chart": {
+    "lines": "Lines",
+    "bars": "Bars",
+    "simple_line_chart": "Simple line chart",
+    "line_chart": "Line chart with area",
+    "bi_polar_line_chart": "Bi-polar line chart with area only",
+    "simple_bar_chart": "Simple bar chart",
+    "multi_line_labels_bar_chart": "Multi-line labels bar chart",
+    "stacked_bar_chart": "Stacked bar chart",
+    "pies_and_donuts": "Pies & Donuts",
+    "simple_pie": "Simple Pie",
+    "pie_with_labels": "Pie with labels",
+    "donut": "Donut"
+  }
+}
