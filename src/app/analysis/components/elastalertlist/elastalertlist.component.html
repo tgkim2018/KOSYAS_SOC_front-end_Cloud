@@ -1,0 +1,24 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Rule list</strong>&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-sm bg-primary fa fa-plus" (click)="onSelectRule()"></button>
+        </div>
+
+        <div class="card-body">
+          <span *ngFor="let elastalertListData of elastalertListDatas">
+              <button class="btn_list col-md-3" (click)="onSelectRuleID(elastalertListData)">
+                {{elastalertListData}}
+                <button class="btn btn-sm bg-danger fa fa-trash" (click)="delElastalertRule(elastalertListData)" style="text-align:right;border-radius:3px;"></button>
+              </button>
+              <!--<button class="btn_delete" (click)="delElastalertRule(elastalertListData)">delete</button>-->
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

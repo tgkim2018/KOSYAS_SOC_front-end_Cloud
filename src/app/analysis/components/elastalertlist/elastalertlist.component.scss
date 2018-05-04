@@ -1,0 +1,32 @@
+.content-subject {
+    font-weight:bolder;
+    font-size:1.5em;
+    padding-top:1em;
+    margin-left:1%;
+}
+
+.btn_list {
+    list-style-type:none;
+    size: 14px;
+    font-size: 20px;
+    border: none;
+    border-radius:4px;
+    background-color: rgba(49, 188, 252, 0.5);
+    width: 20em;
+    height: 40px;
+    color: white;
+    margin: 10px 0 10px 10px;
+    text-align : center;
+}
+
+.btn_delete {
+    size: 14px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: pink;
+    width: 5em;
+    height: 40px;
+    color: white;
+    margin: 10px 10px 10px 0;
+}

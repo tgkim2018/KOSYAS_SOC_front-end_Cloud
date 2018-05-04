@@ -1,0 +1,66 @@
+<header class="app-header navbar">
+  <ul class="nav navbar-nav mr-auto d-md-down-none">
+    <li class="nav-item">
+      <a class="nav-link navbar-toggler" href="#" appSidebarToggler>&#9776;</a>
+    </li>
+    <h4><strong>KOSYAS</strong></h4>
+  </ul>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <h2 style="margin-right:35%;"><strong>CSIMS</strong></h2>
+  
+  <!--
+  <button class="navbar-toggler d-lg-none" type="button" appMobileSidebarToggler>&#9776;</button>
+  <a class="navbar-brand" href="#"></a>
+  -->
+  <li class="nav-item dropdown" dropdown (onToggle)="toggled($event)" style="list-style-type:none;">
+      <a href class="nav-link dropdown-toggle" dropdownToggle (click)="false">
+        <img src="assets/img/avatars/1.jpg" class="img-avatar" alt="admin@kosyas.com">
+        <span class="d-md-down-none">{{UserID}}</span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">
+        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Change Password</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+      </div>
+    </li>
+</header>
+
+<div class="app-body">
+  <div class="sidebar">
+      <app-sidebar>
+      </app-sidebar>
+    <!--
+    <nav class="sidebar-nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']">
+            <i class="icon-chart"></i> Dashboard
+            <span class="badge badge-info">NEW</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    -->
+  </div>
+
+  <!-- Main content -->
+  <main class="main">
+
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+      <app-breadcrumbs></app-breadcrumbs>
+    </ol>
+
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- /.conainer-fluid -->
+  </main>
+</div>
+
+<footer class="app-footer">
+  <a href="http://kosyas.com">KOSYAS</a> &copy; 2017 KOSYAS.corp
+  <span class="float-right">Powered by
+    <a href="http://kosyas.com">KOSYAS</a>
+  </span>
+</footer>

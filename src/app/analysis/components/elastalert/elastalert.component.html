@@ -1,0 +1,6 @@
+<div *ngIf="select === 'list'; else elseRules">
+  <app-elastalertlist></app-elastalertlist>
+</div>
+<ng-template #elseRules>
+  <app-elastalertrule [rule]="ruleData" [name]="ruleName"></app-elastalertrule>
+</ng-template>

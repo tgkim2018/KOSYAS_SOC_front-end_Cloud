@@ -1,0 +1,164 @@
+<div class="animated fadeIN">
+  <div class="row">
+    
+
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>User Information</strong>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" class="form-control col-lg-10" id="id" [value]="ID" disabled>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control col-lg-10" id="password" placeholder="Enter user password">
+          </div>
+          <div class="form-group">
+              <label for="password">confirm Password</label>
+              <input type="password" class="form-control col-lg-10" id="password" placeholder="Enter user same password">
+            </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" class="form-control col-lg-10" id="company"  [(value)]="Company">
+          </div>
+          <div class="form-group">
+              <label for="number">Phone</label>
+              <input type="text" class="form-control col-lg-10" id="number" [(value)]="Phone">
+            </div>
+          <!--/.row-->
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" class="form-control col-lg-10" id="country" [(value)]="Country">
+          </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+            <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--
+<p>
+  configuration works!
+</p>
+-->
+
+<!--
+<strong>User Informaion</strong>
+{{msg.ID}}{{UerInfo.TopMessage}}
+
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> User Information
+        </div>
+        <div class="card-body">
+          <table class="table table-bordered table-striped table-sm">
+            <tbody>
+              <tr>
+                <td>{{UserInfo.IDCatal}}</td>
+                <td>{{msg.ID}}</td>
+              </tr>
+              <tr>
+                <td>{{UserInfo.NameCatal}}</td>
+                <td>{{msg.Name}}</td>
+              </tr>
+              <tr>
+                <td>{{UserInfo.PasswordCatal}}</td>
+                <td>
+                  <input type="password" [value]="password">
+                </td>
+              </tr>
+              <tr>
+                <td>{{UserInfo.ConfirmPasswordCatal}}</td>
+                <td>
+                  <input type="password" [value]="repassword">
+                </td>
+              </tr>
+              <tr>
+                <td>{{UserInfo.PhoneCatal}}</td>
+                <td>
+                  <input type="text" [(NgModel)]="phone">
+                </td>
+              </tr>
+              <tr>
+                <td>{{UserInfo.CompanyCatal}}</td>
+                <td>{{msg.Company}}</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!--
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> User Information
+        </div>
+        <div class="card-body">
+          <table class="table table-bordered table-striped table-sm">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Date registered</th>
+                <th>Role</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>User ID</td>
+                <td>{{ID}}</td>
+              </tr>
+              <tr>
+                <td>User Name</td>
+                <td>{{Name}}</td>
+              </tr>
+              <tr>
+                <td>User Password</td>
+                <td>
+                  <input type="password" [value]="password">
+                </td>
+              </tr>
+              <tr>
+                <td>User Password Confirm</td>
+                <td>
+                  <input type="password" [value]="repassword">
+                </td>
+              </tr>
+              <tr>
+                <td>User Phone Number</td>
+                <td>
+                  <input type="text" [(NgModel)]="phone">
+                </td>
+              </tr>
+              <tr>
+                <td>User Company</td>
+                <td>{{Company}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->

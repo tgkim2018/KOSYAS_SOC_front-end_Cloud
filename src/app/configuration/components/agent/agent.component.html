@@ -1,0 +1,147 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-6 col-lg-6">
+      <div class="card">
+        <div class="card-body p-3 clearfix">
+
+          <!--<div *ngIf="managerStatus.data['ossec-authd']==='running'; else elseStatus">-->
+
+          <div *ngIf="managerStatus.data['ossec-authd']==='running'; else elseStatus">
+            <i class="icon-check bg-success p-4 font-2xl mr-3 float-right"></i>
+            <div class="h5 text-success mb-0 mt-2">Wazuh Manager Status</div>
+            <div class="h5 text-muted mb-0 mt-2">connect</div>
+          </div>
+
+          <ng-template #elseStatus>
+            <i class="icon-check bg-danger p-4 font-2xl mr-3 float-right"></i>
+            <div class="h5 text-danger mb-0 mt-2">Wazuh Manager Status</div>
+            <div class="h5 text-muted mb-0 mt-2">disconnect</div>
+          </ng-template>
+          <!--
+          <i class="icon-check bg-success p-4 font-2xl mr-3 float-right"></i>
+          <div class="h5 text-success mb-0 mt-2">Wazuh Manager Status</div>
+          <div class="h5 text-muted mb-0 mt-2">connect</div>
+        -->
+
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+    <div class="col-6 col-lg-6">
+      <div class="card">
+        <div class="card-body p-3 clearfix">
+          <i class="icon-energy bg-primary p-4 font-2xl mr-3 float-left"></i>
+          <div class="h5 text-primary mb-0 mt-2">Total Agent Connect</div>
+          <div class="h5 text-muted mb-0 mt-2">
+            <strong>{{wazuhAgentListCount}}</strong>&nbsp;Count</div>
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+    <!--
+    <div class="col-6 col-lg-4">
+      <div class="card">
+        <div class="card-body p-3 clearfix">
+          <i class="icon-check bg-warning p-4 font-2xl mr-3 float-right"></i>
+          <div class="h5 text-warning mb-0 mt-2">Current Agent Connect</div>
+          <div class="h5 text-muted mb-0 mt-2">
+            <strong>3</strong>&nbsp;Connect</div>
+        </div>
+      </div>
+    </div>
+    -->
+    <!--/.col-->
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Striped Table
+        </div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>IP</th>
+                <th>platform</th>
+                <th>version</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let wazuhAgentListItem of wazuhAgentListItems">
+                <td ngif="wazuhAgentListItem.status==='Active';else elseAgentStop">
+                  <div class="text-success p-0">
+                    <i class="fa fa-check-circle"></i>
+                  </div>
+                </td>
+                <ng-template #elseAgentStop>
+                  <div class="text-danger p-0">
+                    <i class="fa fa-exclamation-circle"></i>
+                  </div>
+                </ng-template>
+                <td>{{wazuhAgentListItem.id }}</td>
+                <td>{{wazuhAgentListItem.name }}</td>
+                <td>{{wazuhAgentListItem.ip }}</td>
+                <td>{{wazuhAgentListItem.os.platform }}</td>
+                <td>{{wazuhAgentListItem.version }}</td>
+              </tr>
+              <!--
+              <tr>
+                <td>
+                  <div class="text-success p-0">
+                    <i class="fa fa-check-circle"></i>
+                  </div>
+                </td>
+                <td>000</td>
+                <td>Wazuh-server</td>
+                <td>127.0.0.1</td>
+                <td>CentOS7</td>
+                <td>Wazuh v3.1.0</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-success p-0">
+                    <i class="fa fa-check-circle"></i>
+                  </div>
+                </td>
+                <td>001</td>
+                <td>115</td>
+                <td>any</td>
+                <td>ubuntu 16.04.3LTS</td>
+                <td>Wazuh v3.2.1</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-success p-0">
+                    <i class="fa fa-check-circle"></i>
+                  </div>
+                </td>
+                <td>002</td>
+                <td>agent125</td>
+                <td>192.168.0.125</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-danger p-0">
+                    <i class="fa fa-exclamation-circle"></i>
+                  </div>
+                </td>
+                <td>200</td>
+                <td>test</td>
+                <td>none</td>
+                <td>RedHat</td>
+                <td>Wazuh v3.2.1</td>
+              </tr>
+              -->
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+</div>
