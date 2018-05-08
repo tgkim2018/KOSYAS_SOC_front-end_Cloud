@@ -22,24 +22,24 @@ export interface CelebroOverview {
 
 @Injectable()
 export class BaseService {
-  //baseURL = 'http://172.27.0.230:3001';
-  //fullcelebroURL = 'http://172.27.0.230:3001/cats/overview';
+  //baseURL = 'http://211.252.86.169:3001';
+  //fullcelebroURL = 'http://211.252.86.169:3001/cats/overview';
 
   constructor(public http:HttpClient) { }
 
   //OverviewData: CelebroOverview;
-  baseURL = 'http://172.27.0.230:3001';
+  baseURL = 'http://211.252.86.169:3001';
 
   testURL  = "http://localhost:4200";
   testURL1 = "http://192.168.0.116:4200";
   testURL2 = "http://192.168.0.118:8088"
   fulltestURL2 = "http://192.168.0.118:8088/assets/test.json";
-  fullcelebroURL = 'http://172.27.0.230:3001/cats/overview';
+  fullcelebroURL = 'http://211.252.86.169:3001/cats/overview';
 
 
   /* **CELEBRO** connect Elasticsearch to get like 'elebro Data' */
   getCelebroOverview(){
-    //return this.http.get("http://172.27.0.230:3001/cats/overview").map(res=>res.json());
+    //return this.http.get("http://211.252.86.169:3001/cats/overview").map(res=>res.json());
     //return this.http.get<CelebroOverview>(this.baseURL.concat('/cats/overview'));
     //return this.http.get<CelebroOverview>(this.testURL2.concat('/assets/test.json'));
     //return this.http.get<CelebroOverview>(this.fulltestURL2);

@@ -14,7 +14,7 @@ export class ConfigurationService {
 
   mangerStatus: WazuhManagerStatus;
   wazuhAgentList: WazuhAgentList;
-  baseURL = 'http://172.27.0.230:3001';
+  baseURL = 'http://211.252.86.169:3001';
 
   //constructor(private baseService:BaseService, public http:HttpClient) { }
   constructor(public http: HttpClient) { }
