@@ -14,7 +14,8 @@ const routes: Routes = [
                 path: 'configuration',
                 component: ConfigurationComponent,
                 data: { title: 'Configuration' }
-            }
+            },
+            {path: '',redirectTo: 'configuration', pathMatch: 'full' }
         ]
     }
 ];

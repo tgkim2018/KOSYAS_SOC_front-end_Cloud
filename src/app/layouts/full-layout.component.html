@@ -18,7 +18,7 @@
         <span class="d-md-down-none">{{UserID}}</span>
       </a>
       <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">
-        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/userinfo/information']"><i class="fa fa-user"></i> Profile</a>
         <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Change Password</a>
         <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
       </div>

@@ -20,7 +20,8 @@ const routes: Routes = [
                 path: 'elastalert',
                 component: ElastalertComponent,
                 data: { title: 'Elastalert' }
-            }
+            },
+            {path: '',redirectTo: 'correlation', pathMatch: 'full' }
         ]
     }
 ];

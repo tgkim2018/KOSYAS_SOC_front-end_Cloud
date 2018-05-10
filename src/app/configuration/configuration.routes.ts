@@ -26,7 +26,8 @@ const routes: Routes = [
                 path: 'system',
                 component: SystemComponent,
                 data: { title: 'System' }
-            }
+            },
+            {path: '',redirectTo: 'agent', pathMatch: 'full' }
         ]
     }
 ];
