@@ -12,64 +12,67 @@
         -->
       <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
         <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle>
-          <i class="icon-grid"></i> Dashboard</a>
+          <i class="icon-grid"></i> 대시보드</a>
         <ul class="nav-dropdown-items">
           <li class="nav-item">
-            <a class="nav-sub nav-link" routerLinkActive="active" [routerLink]="['/dashboard/overview']"> overview</a>
+            <a class="nav-sub nav-link" routerLinkActive="active" [routerLink]="['/dashboard/overview']"> 전체</a>
           </li>
           <li class="nav-item">
-            <a class="nav-sub nav-link" routerLinkActive="active" [routerLink]="['/dashboard/intrusion']"> Intrusion</a>
+            <a class="nav-sub nav-link" routerLinkActive="active" [routerLink]="['/dashboard/intrusion']"> 침입탐지</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/dashboard/vulnerability']"> Vulnerability</a>
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/dashboard/vulnerability']"> 취약점</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/dashboard/system']"> System</a>
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/dashboard/system']"> 시스템</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/dashboard/fulllogs']"> Full Logs</a>
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/dashboard/fulllogs']"> 전체로그</a>
           </li>
         </ul>
       </li>
       <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
         <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle>
-          <i class="icon-note"></i> Analysis</a>
+          <i class="icon-note"></i> 분석</a>
         <ul class="nav-dropdown-items">
           <li class="nav-item">
-            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/analysis/correlation']"> Correlation</a>
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/analysis/correlation']"> 연관분석</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/analysis/elastalert']"> Alert</a>
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/analysis/elastalert']"> 알림</a>
           </li>
         </ul>
       </li>
       <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
         <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle>
-          <i class="icon-settings"></i> Configuration </a>
+          <i class="icon-settings"></i> 설정 </a>
         <ul class="nav-dropdown-items">
           <li class="nav-item">
-            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/configuration/user']"> User</a>
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/configuration/user']"> 사용자 관리</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/configuration/agent']"> Agent</a>
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/configuration/agent']"> 에이전트 관리</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/configuration/system']"> System</a>
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/configuration/system']"> 시스템 관리</a>
           </li>
         </ul>
       </li>
       <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
         <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle>
-          <i class="icon-screen-desktop"></i> Report</a>
+          <i class="icon-screen-desktop"></i> 보고서</a>
         <ul class="nav-dropdown-items">
           <li class="nav-item">
-            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/report/configuration']"> Configuration</a>
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/report/configuration']"> 미리보기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-sub" routerLinkActive="active" [routerLink]="['/report/configuration']"> 보고서 설정</a>
           </li>
         </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLinkActive="active" [routerLink]="['/charts']">
-          <i class="icon-loop"></i> Intelligence</a>
+          <i class="icon-loop"></i> 인텔리전스</a>
       </li>
       <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown style="display: none;">
         <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle>

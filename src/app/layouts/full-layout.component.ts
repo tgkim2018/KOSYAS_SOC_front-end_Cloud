@@ -7,7 +7,7 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 })
 export class FullLayoutComponent implements OnInit {
 
-  UserID ="tgkim@kosyas.com";
+  UserID ="test@test.com";
 
   public disabled = false;
   public status: {isopen: boolean} = {isopen: false};

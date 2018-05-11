@@ -37,6 +37,7 @@ export class ElastalertlistComponent implements OnInit {
   getElastalertData(){
     this.elastalertList = this.commonservice.getElastAlert("/ea/rules");
     this.elastalertListDatas = this.elastalertList.rules;
+    
   }
 
   postElastalertData(){
